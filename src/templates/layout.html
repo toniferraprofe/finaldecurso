@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/reset.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/main.css") }}">
+    <link rel="stylesheet" href="{{ url_for("static", filename="js/main.js") }}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <!-- MAIN -->
+    <!-- Javier es el mejor -->
+    <main>
+        <section class="section">
+                {% block content %}{% endblock %}
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer>
+        <section class="section">
+            {% block footer %}{% endblock %}
+        </section>
+    </footer>
+
+</body>
+</html>
