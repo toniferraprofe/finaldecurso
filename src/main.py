@@ -1,3 +1,7 @@
+"""
+COPYRIGHT MADE BY @JAVIER
+
+"""
 from flask import Flask
 from flask import url_for
 
