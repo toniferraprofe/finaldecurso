@@ -1,5 +1,6 @@
 """
 COPYRIGHT MADE BY @JAVIER
+BEST OF THE BEST
 
 """
 from flask import Flask
