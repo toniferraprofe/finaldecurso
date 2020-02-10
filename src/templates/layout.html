@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="author" content="{% block autor %}{% endblock %}">
+	<title>{% block title %}{% endblock %}</title>
+	
+    <!-- Favicon-->
+    <link rel="icon" href="{{ url_for("static", filename="images/favicon.ico") }}">
+           
+	<!-- RESET CSS -->
+	<link rel="stylesheet" href="{{ url_for("static", filename="css/reset.css") }}">
+
+	<!-- BULMA CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	
+	<!-- TU CUSTOM CSS -->
+	<link rel="stylesheet" href="{{ url_for("static", filename="css/main.css") }}">
+
+	<!-- CUSTOM JS -->
+	<link rel="stylesheet" href="{{ url_for("static", filename="js/main.js") }}">
+
+    <!-- bulma Font Awesome Free - https://fontawesome.com -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- Javier es el mejor -->
+    <header>
+        <section class="section">
+            {% block header %}{% endblock %}
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="section">
+                {% block main %}{% endblock %}
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer>
+        <section class="section">
+            {% block footer %}{% endblock %}
+        </section>
+    </footer>
+
+</body>
+</html>
