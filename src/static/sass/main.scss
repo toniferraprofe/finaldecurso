@@ -1,0 +1,26 @@
+@import 'bases/reset';
+@import 'vendors/bulma';
+
+@import 'bases/typo';
+
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/placeholders';
+
+@import 'layouts/footer';
+@import 'layouts/forms';
+@import 'layouts/grid';
+@import 'layouts/header';
+@import 'layouts/nav';
+
+@import 'components/buttons';
+@import 'components/slider';
+
+@import 'views/home';
+@import 'views/contact';
+
+@import 'themes/default';
+@import 'themes/red';
+// ....
+
